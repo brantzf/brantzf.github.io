@@ -27,12 +27,12 @@ public interface IFactory {
 public class FactoryA implements IFactory {
     public IProduct create(ProductEnum productEnum) {
         if(ProductEnum.A1.equals(productEnum)) {
-			return new ProductA1();
-		} else if(ProductEnum.A2.equals(productEnum)) {
-		    return new ProductA2();
-		}
-	    return null;
-    }
+            return new ProductA1();
+        } else if(ProductEnum.A2.equals(productEnum)) {
+            return new ProductA2();
+        }
+        return null;
+	}
 }
 // 工厂B
 public class FactoryB implements IFactory {
@@ -88,11 +88,11 @@ public interface IFactory {
 // 工厂1: 具体工厂使用“工厂方法”来实现
 public class Factory1 implements IFactory {
     public IProduct createProductA() {
-	    return new ProductA1;
+        return new ProductA1();
     }
     
     public IProduct createProductB() {
-	    return new ProductB1;
+        return new ProductB1();
     }
 }
 // 工厂2
