@@ -131,7 +131,7 @@ public class Singleton {
     
     private Singleton() {}
     
-    public Singleton getInstance() {
+    public static Singleton getInstance() {
         if(instance == null) { // Single Checked
             synchronized(Singleton.class) {
                 if(instance == null) { // Double Checked
