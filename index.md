@@ -217,9 +217,6 @@ public class Adaptee {
 }
 // 适配类：采用继承的方式
 public class Adapter extends Adaptee implements ITarget {
-    public Adapter(Adaptee adaptee) {
-        this.adaptee = adaptee;
-    }
     
     public void show() {
         specificRequest();
